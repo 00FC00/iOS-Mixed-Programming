@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		60DB64092C4E47C9005079D8 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB64082C4E47C9005079D8 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60DB64172C4E4F7C005079D8 /* OCTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB64152C4E4F7C005079D8 /* OCTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60DB64182C4E4F7C005079D8 /* OCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DB64162C4E4F7C005079D8 /* OCTest.m */; };
 		60DB641A2C4E5374005079D8 /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB64192C4E5374005079D8 /* SwiftTest.swift */; };
@@ -15,10 +14,10 @@
 
 /* Begin PBXFileReference section */
 		60DB64052C4E47C9005079D8 /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		60DB64082C4E47C9005079D8 /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		60DB64152C4E4F7C005079D8 /* OCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTest.h; sourceTree = "<group>"; };
 		60DB64162C4E4F7C005079D8 /* OCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTest.m; sourceTree = "<group>"; };
 		60DB64192C4E5374005079D8 /* SwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
+		60DB64202C4E5DE7005079D8 /* MyFramework-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFramework-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +50,10 @@
 		60DB64072C4E47C9005079D8 /* MyFramework */ = {
 			isa = PBXGroup;
 			children = (
-				60DB64082C4E47C9005079D8 /* MyFramework.h */,
 				60DB64152C4E4F7C005079D8 /* OCTest.h */,
 				60DB64162C4E4F7C005079D8 /* OCTest.m */,
 				60DB64192C4E5374005079D8 /* SwiftTest.swift */,
+				60DB64202C4E5DE7005079D8 /* MyFramework-Bridging-Header.h */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -66,7 +65,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60DB64092C4E47C9005079D8 /* MyFramework.h in Headers */,
 				60DB64172C4E4F7C005079D8 /* OCTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +295,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFramework/MyFramework-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -330,6 +329,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "MyFramework/MyFramework-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
