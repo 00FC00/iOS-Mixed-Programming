@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		60DB64092C4E47C9005079D8 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB64082C4E47C9005079D8 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60DB64172C4E4F7C005079D8 /* OCTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB64152C4E4F7C005079D8 /* OCTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60DB64182C4E4F7C005079D8 /* OCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DB64162C4E4F7C005079D8 /* OCTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		60DB64052C4E47C9005079D8 /* MyFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60DB64082C4E47C9005079D8 /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
+		60DB64152C4E4F7C005079D8 /* OCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTest.h; sourceTree = "<group>"; };
+		60DB64162C4E4F7C005079D8 /* OCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 			isa = PBXGroup;
 			children = (
 				60DB64082C4E47C9005079D8 /* MyFramework.h */,
+				60DB64152C4E4F7C005079D8 /* OCTest.h */,
+				60DB64162C4E4F7C005079D8 /* OCTest.m */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -58,6 +64,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB64092C4E47C9005079D8 /* MyFramework.h in Headers */,
+				60DB64172C4E4F7C005079D8 /* OCTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DB64182C4E4F7C005079D8 /* OCTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +283,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
@@ -304,6 +313,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
