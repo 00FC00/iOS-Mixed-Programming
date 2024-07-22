@@ -21,5 +21,9 @@
     [SwiftTest test];
 }
 
++ (void)test {
+    NSLog(@"OC test 执行了");
+    printf("C test 执行了\n");
+}
 
 @end

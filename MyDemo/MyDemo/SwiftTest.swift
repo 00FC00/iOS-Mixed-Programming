@@ -9,6 +9,7 @@ import Foundation
 
 class SwiftTest: NSObject {
     @objc static func test() {
+        ViewController.test()
         print("Swift test 执行了")
     }
 }

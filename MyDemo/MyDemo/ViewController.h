@@ -9,6 +9,6 @@
 
 @interface ViewController : UIViewController
 
-
++ (void)test;
 @end
 
