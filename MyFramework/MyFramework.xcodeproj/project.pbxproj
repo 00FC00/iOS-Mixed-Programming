@@ -10,6 +10,7 @@
 		60DB64092C4E47C9005079D8 /* MyFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB64082C4E47C9005079D8 /* MyFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60DB64172C4E4F7C005079D8 /* OCTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 60DB64152C4E4F7C005079D8 /* OCTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		60DB64182C4E4F7C005079D8 /* OCTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 60DB64162C4E4F7C005079D8 /* OCTest.m */; };
+		60DB641A2C4E5374005079D8 /* SwiftTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DB64192C4E5374005079D8 /* SwiftTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +18,7 @@
 		60DB64082C4E47C9005079D8 /* MyFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFramework.h; sourceTree = "<group>"; };
 		60DB64152C4E4F7C005079D8 /* OCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTest.h; sourceTree = "<group>"; };
 		60DB64162C4E4F7C005079D8 /* OCTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTest.m; sourceTree = "<group>"; };
+		60DB64192C4E5374005079D8 /* SwiftTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 				60DB64082C4E47C9005079D8 /* MyFramework.h */,
 				60DB64152C4E4F7C005079D8 /* OCTest.h */,
 				60DB64162C4E4F7C005079D8 /* OCTest.m */,
+				60DB64192C4E5374005079D8 /* SwiftTest.swift */,
 			);
 			path = MyFramework;
 			sourceTree = "<group>";
@@ -100,6 +103,7 @@
 				TargetAttributes = {
 					60DB64042C4E47C9005079D8 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60DB64182C4E4F7C005079D8 /* OCTest.m in Sources */,
+				60DB641A2C4E5374005079D8 /* SwiftTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +273,7 @@
 		60DB640D2C4E47C9005079D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -291,6 +297,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -298,6 +306,7 @@
 		60DB640E2C4E47C9005079D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -321,6 +330,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

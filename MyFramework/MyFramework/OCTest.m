@@ -6,6 +6,7 @@
 //
 
 #import "OCTest.h"
+#import <MyFramework/MyFramework-Swift.h>
 
 @implementation OCTest
 
@@ -13,4 +14,7 @@
     NSLog(@"OC test 执行了");
 }
 
++ (void)testSwift {
+    [SwiftTest test];
+}
 @end
