@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+class SwiftTest: NSObject {
+    @objc static func test() {
+        print("Swift test 执行了")
+    }
+}
