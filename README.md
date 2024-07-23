@@ -5,3 +5,8 @@
 1.App工程应用中的混编开发。
 
 2.framework中的混编开发。
+
+详细文档见我的印象笔记：
+
+iOS的OC和Swift混编【Project篇】
+iOS的OC和Swift混编【Framework篇】
